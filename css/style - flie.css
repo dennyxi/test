@@ -1,0 +1,40 @@
+.imgbox,.imgbox1
+{
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+    position: relative;
+    width:182px;
+    height:182px;
+
+    border: 1px solid red;
+    overflow: hidden;
+
+}
+.imgnum{
+    left:0px;
+    top: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+.imgnum input,.imgnum1 input {
+    position: absolute;
+    width: 182px;
+    height: 182px;
+
+    opacity: 0;
+}
+.imgnum img,.imgnum1 img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 182px;
+    height: 182px;
+}
+.close,
+.close1 {
+    color: red;
+    position: absolute;
+    left: 170px;
+    top: 0px;
+    display: none;
+}

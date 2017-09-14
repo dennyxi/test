@@ -1,0 +1,183 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Optima, sans-serif;
+}
+
+header{
+  text-align: center;
+  color: white;
+  background-color: #055;
+}
+header h1, header h2{
+  margin: 0;
+}
+header h1{
+  color: #ffff00;
+  font-size: 250%;
+}
+header h2{
+  font-weight: normal;
+  font-style: italic;
+}
+
+#img{
+  position:relative;
+  left:35%;
+  top: 150px;
+}
+.imgbox,.imgbox1
+{
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+    position: relative;
+    width:182px;
+    height:182px;
+
+    border: 1px solid red;
+    overflow: hidden;
+
+}
+.imgnum{
+    left:0px;
+    top: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+.imgnum input,.imgnum1 input {
+    position: absolute;
+    width: 182px;
+    height: 182px;
+
+    opacity: 0;
+}
+.imgnum img,.imgnum1 img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 182px;
+    height: 182px;
+}
+.close,
+.close1 {
+    color: red;
+    position: absolute;
+    left: 170px;
+    top: 0px;
+    display: none;
+}
+
+#sitenav{
+  color: white;
+  background-color: #404;
+}
+#sitenav ol {
+  margin: 0;
+  padding: 0;
+  font-size: 90%;
+  text-align: center;
+  display: inline;
+}
+#sitenav li {
+  margin-left: 1em;
+  border-left: 1px solid #dd0;
+  display: inline;
+}
+
+#sitenav li:first-child{
+  padding-left: 0;
+  border-left: none;
+  margin-left: 0;
+}
+
+#sitenav li a:link,#sitenav li a:visited{
+  color: white;
+  text-decoration: none;
+}
+#sitenav li a:hover{
+  color: #dddd00;
+}
+#sidebar1 {
+  position: absolute;
+  width: 25em;
+
+  right: 1em;
+  top: 20em;
+}
+#sidebar1 h3{
+  font-size: 100%;
+  color: white;
+  width: 14.6em;
+  margin: 0;
+  font-weight: normal;
+  padding: 0.125em 0.25em;
+  background-color: #404;
+  text-align: center;
+
+}
+
+
+#sidebar1 ol{
+  background-color: white;
+  height: 50px;
+  border: 2px solid #404;
+  border-top: 0;
+  margin: 0 0 1em 0;
+  padding: 0.125em 0.25em;
+  position: absolute;
+
+}
+
+
+#sidebar1 li {
+  font-size: 85%;
+  display: block;
+  padding: 0.125em 0;
+}
+
+#content{
+  background-color: white;
+  padding: 1em 5em;
+
+}
+#content h3{
+  margin-top: 0;
+}
+#content p{
+  font-size: 90%;
+  line-height: 1.4;
+}
+#main {
+  background-color: #055;
+  text-align: center;
+}
+.showoverlay{
+  width:230px;
+  height:20px;
+
+  display:block;
+}
+.hideoverlay{
+  width:230px;
+  height:20px;
+  z-index:103;
+  display:block;
+  position:absolute;
+
+}
+
+
+.overlay  {
+  background: #000;
+  filter: alpha(opacity=50); /* IE的透明度 */
+  opacity: 0.5; /* 透明度 */
+  display: none;
+  position: absolute;
+  top: 0px;
+
+  width: 100%;
+  height: 100%;
+  z-index: 101; /* 此处的图层要大于页面 */
+  display:none;
+  _background-color:#a0a0a0; /* 解决IE6的不透明问题 */
+}
